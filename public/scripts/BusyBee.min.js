@@ -1,6 +1,6 @@
 /*
 Busy Bee
-Copyright (c) 2012 Vince Allen
+Copyright (c) 2013 Vince Allen
 vince@vinceallen.com
 http://www.vinceallen.com
 
@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 /* Version: 1.0.0 */
-/* Build time: February 3, 2013 03:08:19 */
+/* Build time: February 3, 2013 03:20:04 */
 
 var BusyBee={},exports=BusyBee;
 (function(d){function c(a,b,h,c,e,f,i){this.tasks=a;this.onStart=b||this._noop;this.onProgress=h||this._noop;this.onFinish=c||this._noop;this.onError=e||this._noop;this.path=f||"scripts/tasks.js";this.swarm=i||new d.Swarm(4);this.startTime=(new Date).getTime();this.swarm._init(this.tasks,this.path,this.onStart.bind(this),this.onProgress.bind(this),this.onFinish.bind(this),this.onError.bind(this))}function b(a){this.maxWorkers=a||4;this.workers={lookup:{},list:[]};this.totalBusy=0;this.onError=this.onFinish=

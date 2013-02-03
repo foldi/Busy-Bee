@@ -1,6 +1,6 @@
 /*
 Busy Bee
-Copyright (c) 2012 Vince Allen
+Copyright (c) 2013 Vince Allen
 vince@vinceallen.com
 http://www.vinceallen.com
 
@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 /* Version: 1.0.0 */
-/* Build time: February 3, 2013 03:08:19 */
+/* Build time: February 3, 2013 03:20:04 */
 /** @namespace */
 var BusyBee = {}, exports = BusyBee;
 
@@ -36,8 +36,7 @@ var BusyBee = {}, exports = BusyBee;
  * A BusyBee project uses a pool of Web Workers to complete a list
  * of tasks. Tasks are passed into a new Project as an array of objects
  * with a command and a set of options. Supply callbacks for feedback on start,
- * progress, completion and error. All callbacks are triggered via the event object
- * from the Web Worker.
+ * progress, completion and error.
  *
  * @example
  * var tasks = [

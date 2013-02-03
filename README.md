@@ -3,7 +3,7 @@ Busy Bee
 
 Busy Bee pools Web Workers to complete a list of tasks. By default, Busy Bee uses four workers in parallel. If a worker is done and tasks are still available, the worker will pick up a new task and get back to work.
 
-Tasks are passed into a new Project as an array of objects with a command and a set of options. Supply callbacks for feedback on start, progress, completion and error. All callbacks are passed the event object from the Web Worker.
+Tasks are passed into a new Project as an array of objects with a command and a set of options. Supply callbacks for feedback on start, progress, completion and error.
 
 ## Example
 

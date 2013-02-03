@@ -5,8 +5,7 @@
  * A BusyBee project uses a pool of Web Workers to complete a list
  * of tasks. Tasks are passed into a new Project as an array of objects
  * with a command and a set of options. Supply callbacks for feedback on start,
- * progress, completion and error. All callbacks are triggered via the event object
- * from the Web Worker.
+ * progress, completion and error.
  *
  * @example
  * var tasks = [
