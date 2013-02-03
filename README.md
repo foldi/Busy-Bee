@@ -20,11 +20,7 @@ Finally, call start() to kick off the process.
 <html>
   <head>
     <meta http-equiv='content-type' content='text/html; charset=UTF-8' />
-    <meta name='keywords' content='BusyBee' />
-    <meta name='description' content='' />
-    <meta name='viewport' content='user-scalable=no, width=device-width, initial-scale=1.0; maximum-scale=1.0;' />
     <title>BusyBee</title>
-    <link rel='stylesheet' href='css/BusyBee.css' type='text/css' charset='utf-8' />
     <script src='scripts/tasks.js' type='text/javascript' charset='utf-8'></script>
     <script src='scripts/BusyBee.js' type='text/javascript' charset='utf-8'></script>
   </head>
