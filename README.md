@@ -1,7 +1,9 @@
 Busy Bee
 ======
 
-A Busy Bee uses a pool of Web Workers to complete a list of tasks. Tasks are passed into a new Project as an array of objects with a command and a set of options. Supply callbacks for feedback on start, progress, completion and error. All callbacks are passed the event object from the Web Worker.
+Busy Bee pools Web Workers to complete a list of tasks. By default, Busy Bee uses four workers in parallel. If a worker is done and tasks are still available, the worker will pick up a new task and get back to work.
+
+Tasks are passed into a new Project as an array of objects with a command and a set of options. Supply callbacks for feedback on start, progress, completion and error. All callbacks are passed the event object from the Web Worker.
 
 ## Example
 
@@ -29,6 +31,18 @@ Finally, call start() to kick off the process.
   <body>
     <script type='text/javascript' charset='utf-8'>
     var tasks = [
+      {
+        cmd: 'sub',
+        options: {
+          max: 100000000
+        }
+      },
+      {
+        cmd: 'add',
+        options: {
+          max: 100000000
+        }
+      },
       {
         cmd: 'sub',
         options: {
@@ -90,3 +104,5 @@ Finally, call start() to kick off the process.
   </body>
 </html>
 ```
+
+You should see messages printed to the screen as each worker completes a task. If any tasks are left, the available worker picks it up.
